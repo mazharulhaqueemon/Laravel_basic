@@ -22,10 +22,11 @@ class UserController extends Controller
     function showview(){
         return view("showviewWithController");
     }
-     // show data to view 
+     // show data,array to view
     function userhome(){
         $name="emon";
-        return view("passvaribledata",["user"=>$name]);
+        $array=['emon','sagor','raju'];
+        return view("passvaribledata",["user"=>$name,"showarray"=>$array]);
 
 }
 }
