@@ -32,3 +32,4 @@ Route::get('aboutuser',[UserController::class,'aboutuser']);
 Route::get('getusername/{name}',[UserController::class,'getusername']);
 // Show view via controller :
 Route::get('showaboutview',[UserController::class,'showview']);
+Route::get('userhome',[UserController::class,'userhome']);

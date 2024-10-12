@@ -18,8 +18,14 @@ class UserController extends Controller
      function getusername($name){
         return "pass my name :".$name;
         }
+    // SHOW VIEW VIA CONTROLLER
     function showview(){
         return view("showviewWithController");
     }
+     // show data to view 
+    function userhome(){
+        $name="emon";
+        return view("passvaribledata",["user"=>$name]);
 
+}
 }
